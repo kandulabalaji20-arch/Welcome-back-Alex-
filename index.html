@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Dashboard - Bento Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bento-container">
+        <!-- Header / Welcome -->
+        <div class="bento-item header-card">
+            <h1>Welcome back, Alex! 👋</h1>
+            <p>You've completed 80% of your weekly goal.</p>
+        </div>
+
+        <!-- Calories -->
+        <div class="bento-item stats-card calories">
+            <div class="icon">🔥</div>
+            <div class="info">
+                <h3>Calories Burned</h3>
+                <p class="value">1,240 kcal</p>
+            </div>
+        </div>
+
+        <!-- Activity Ring -->
+        <div class="bento-item main-chart">
+            <h3>Weekly Activity</h3>
+            <div class="chart-placeholder">
+                <div class="bar" style="height: 60%;"></div>
+                <div class="bar" style="height: 80%;"></div>
+                <div class="bar" style="height: 50%;"></div>
+                <div class="bar" style="height: 90%;"></div>
+                <div class="bar" style="height: 70%;"></div>
+                <div class="bar" style="height: 100%; background: var(--accent);"></div>
+                <div class="bar" style="height: 40%;"></div>
+            </div>
+        </div>
+
+        <!-- Heart Rate -->
+        <div class="bento-item stats-card heart-rate">
+            <div class="icon">❤️</div>
+            <div class="info">
+                <h3>Heart Rate</h3>
+                <p class="value">72 bpm</p>
+                <p class="sub-text">Resting</p>
+            </div>
+        </div>
+
+        <!-- Water Intake -->
+        <div class="bento-item stats-card water">
+            <div class="icon">💧</div>
+            <div class="info">
+                <h3>Water Intake</h3>
+                <p class="value">2.5 L</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sleep -->
+        <div class="bento-item stats-card sleep">
+            <div class="icon">🌙</div>
+            <div class="info">
+                <h3>Sleep</h3>
+                <p class="value">7h 20m</p>
+            </div>
+        </div>
+
+        <!-- Workout Plan -->
+        <div class="bento-item workout">
+            <h3>Today's Plan</h3>
+            <ul class="workout-list">
+                <li><span class="time">08:00 AM</span> Morning Run</li>
+                <li><span class="time">06:00 PM</span> Weight Training</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
